@@ -1,0 +1,160 @@
+.navbar {
+  background: #27282c;
+  min-height: 75px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1000;
+}
+
+@media screen and (min-width: 3000px) {
+  .navbar {
+    padding-left: 986px !important;
+    padding-right: 986px !important;
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3000px) {
+  .navbar {
+    padding-left: 386px !important;
+    padding-right: 386px !important;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .navbar {
+    padding-left: 286px;
+    padding-right: 286px;
+  }
+}
+
+@media screen and (max-width: 1899px) {
+  .navbar {
+    padding-left: 186px;
+    padding-right: 186px;
+  }
+}
+
+.navbar .logo {
+  width: 75px;
+  min-height: 75px;
+  background: black;
+  color: white;
+  text-align: left;
+  padding: 3px;
+  font-weight: bold;
+  line-height: 15px;
+  padding-top: 8px;
+  position: relative;
+}
+
+.navbar .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navbar .options :not(:first-child) {
+  margin-left: 20px;
+}
+
+.navbar .options li {
+  font-size: 1.3rem;
+  color: #858585;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar .options li:hover {
+  color: white;
+}
+
+.navbar .options li::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: calc(50% - 25px);
+  background: #fff;
+  width: 50px;
+  height: 20px;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  visibility: var(--isvisible, hidden);
+}
+
+.navbar .option_info_container {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: 92vh;
+  background: rgba(128, 128, 128, 0.5);
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.navbar .option_info_container .option_info {
+  width: 1306px;
+  min-height: 500px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.navbar .option_info_container .option_info .highlights_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 500px;
+  width: 300px;
+}
+
+.navbar .option_info_container .option_info .highlights_container .single_highlight {
+  min-height: 250px;
+  width: 300px;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.navbar .option_info_container .option_info .highlights_container .single_highlight span {
+  color: white;
+  text-align: left;
+}
+/*# sourceMappingURL=Nav.css.map */

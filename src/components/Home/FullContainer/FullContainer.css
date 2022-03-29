@@ -1,0 +1,66 @@
+.full_container {
+  width: 100vw;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 3000px) {
+  .full_container {
+    margin-left: -986px !important;
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3000px) {
+  .full_container {
+    margin-left: -386px !important;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .full_container {
+    margin-left: -286px;
+  }
+}
+
+@media screen and (max-width: 1899px) {
+  .full_container {
+    margin-left: -186px;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .full_container {
+    padding-left: 986px !important;
+    padding-right: 986px !important;
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3000px) {
+  .full_container {
+    padding-left: 386px !important;
+    padding-right: 386px !important;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .full_container {
+    padding-left: 286px;
+    padding-right: 286px;
+  }
+}
+
+@media screen and (max-width: 1899px) {
+  .full_container {
+    padding-left: 186px;
+    padding-right: 186px;
+  }
+}
+/*# sourceMappingURL=FullContainer.css.map */

@@ -1,0 +1,9 @@
+@import "../../../utilities";
+
+.full_container {
+  width: 100vw;
+  height: 500px;
+  @include ignorePadding;
+  @include getSidePadding;
+  @include flex-center;
+}

@@ -1,0 +1,60 @@
+.tools_container {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tools_container :not(:first-child) {
+  margin-left: 10px;
+}
+
+.tools_container .single_tool {
+  width: 22%;
+  height: 100%;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tools_container .single_tool span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.tools_container .single_tool span a {
+  text-decoration: none;
+  color: #2d86fa;
+  margin-left: 0;
+}
+
+.tools_container .single_tool span a:hover {
+  text-decoration: underline;
+}
+
+.tools_container .single_tool span p {
+  color: #949393;
+  margin-left: 0;
+}
+
+.tools_container .single_tool span :not(:first-child) {
+  margin-top: 20px;
+  text-align: left;
+}
+/*# sourceMappingURL=Tools.css.map */

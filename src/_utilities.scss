@@ -1,0 +1,52 @@
+$bg: rgb(39, 40, 44);
+$txtColor: rgb(133, 133, 133);
+$sidePadding: 186px;
+$lightBlue: rgb(52, 126, 246);
+
+@media screen and (min-width: 1020px) {
+  $sidePadding: 286px;
+}
+
+@mixin getSidePadding {
+  @media screen and (min-width: 3000px) {
+    padding-left: 986px !important;
+    padding-right: 986px !important;
+  }
+  @media screen and (min-width: 2000px) and (max-width: 3000px) {
+    padding-left: 386px !important;
+    padding-right: 386px !important;
+  }
+
+  @media screen and (min-width: 1900px) {
+    padding-left: 286px;
+    padding-right: 286px;
+  }
+  @media screen and(max-width: 1899px) {
+    padding-left: 186px;
+    padding-right: 186px;
+  }
+}
+@mixin ignorePadding {
+  @media screen and (min-width: 3000px) {
+    margin-left: -986px !important;
+  }
+  @media screen and (min-width: 2000px) and (max-width: 3000px) {
+    margin-left: -386px !important;
+  }
+  @media screen and (min-width: 1900px) {
+    margin-left: -286px;
+  }
+  @media screen and(max-width: 1899px) {
+    margin-left: -186px;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bo {
+  border: solid red;
+}

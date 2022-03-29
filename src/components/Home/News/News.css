@@ -1,0 +1,49 @@
+.full_container {
+  width: 100vw;
+  height: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+}
+
+.full_container h1 {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.full_container > * {
+  color: black;
+}
+
+.full_container .tools_container {
+  margin-top: 0;
+  height: 250px;
+}
+
+.full_container .tools_container .single_tool {
+  width: 35% !important;
+  font-size: 0.8rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 200px;
+}
+
+.full_container .tools_container .single_tool h4 {
+  text-align: left;
+  color: darkgrey;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.full_container .tools_container .single_tool h3 {
+  width: 100%;
+  margin-left: 0;
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=News.css.map */
