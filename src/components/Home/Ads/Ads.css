@@ -10,8 +10,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -27,13 +27,90 @@
   width: 65%;
   height: 100%;
   border-radius: 20px;
-  padding: 10px;
-  background: #1e66e9;
-  background: linear-gradient(145deg, #1e66e9 0%, #2a86f1 100%);
+  padding: 40px;
+  background: #347ef6;
+  position: relative;
+  overflow: hidden;
+}
+
+.ads_container .bigAd h1 {
+  font-weight: bold;
+  max-width: 400px;
+}
+
+.ads_container .bigAd h2 {
+  text-align: left;
+  font-size: 2rem;
+  max-width: 400px;
+}
+
+.ads_container .bigAd button {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  z-index: 100;
+  background: white;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.ads_container .bigAd button:hover {
+  background: #cdcdcd;
+}
+
+.ads_container .bigAd .images_container {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  left: 0;
+  bottom: 0;
+}
+
+.ads_container .bigAd .images_container img {
+  position: absolute;
+  top: -120px;
+  right: 50px;
+}
+
+.ads_container .bigAd .images_container > :nth-child(1) {
+  top: -250px;
+  right: -50px;
+}
+
+.ads_container .bigAd .images_container > :nth-child(2) {
+  z-index: 10;
+}
+
+.ads_container .bigAd .images_container > :nth-child(3) {
+  top: -5px;
+  right: 250px;
+}
+
+.ads_container .bigAd .images_container .rectangle {
+  width: 100%;
+  height: 100%;
+  background: #19191c;
 }
 
 .ads_container .small_container {
   height: 100%;
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .ads_container .small_container > :not(:first-child) {
@@ -51,10 +128,10 @@
 }
 
 .ads_container .small_container .smallAd {
-  width: 420px;
+  width: 95%;
   height: 290px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 40px;
   overflow: hidden;
 }
 /*# sourceMappingURL=Ads.css.map */
