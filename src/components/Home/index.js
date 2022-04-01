@@ -6,6 +6,7 @@ import { Testimonials } from "./Testimonials/Testimonials";
 import { Tools } from "./Tools/Tools";
 import { ToolsShowcase } from "./ToolsShowcase/ToolsShowcase";
 import { DiscoverMore } from "./DiscoverMore/DiscoverMore";
+import { Footer } from "./Footer/Footer";
 
 const toolsShowcaseObj = {
   description1: (
@@ -62,13 +63,13 @@ const tools = [
 ];
 
 export const Home = () => {
-  React.useEffect(() => {
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Meta") e.preventDefault();
-    });
+  // React.useEffect(() => {
+  //   document.addEventListener("keydown", (e) => {
+  //     if (e.key === "Meta") e.preventDefault();
+  //   });
 
-    return () => document.removeEventListener("keydown");
-  }, []);
+  //   return () => document.removeEventListener("keydown");
+  // }, []);
 
   return (
     <section className="home_container">
@@ -80,6 +81,7 @@ export const Home = () => {
       <News />
       <Testimonials />
       <DiscoverMore />
+      <Footer />
     </section>
   );
 };
