@@ -15,6 +15,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "jbNormal";
+  font-family: "jbSans";
+  font-weight: 550;
 }
 
 code {
@@ -25,4 +27,9 @@ code {
 @font-face {
   font-family: jbNormal;
   src: url("./fonts/webfonts/JetBrainsMono-Regular.woff2");
+}
+
+@font-face {
+  font-family: jbSans;
+  src: url("./fonts/webfonts/JetBrainsSans.woff2");
 }
