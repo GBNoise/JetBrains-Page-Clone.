@@ -38,6 +38,9 @@
   text-decoration: none;
   color: #2d86fa;
   margin-left: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .tools_container .single_tool span a:hover {
