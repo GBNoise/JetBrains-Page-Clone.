@@ -1,5 +1,4 @@
 .full_container {
-  width: 100vw;
   height: 500px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -12,7 +11,7 @@
 
 .full_container h1 {
   text-align: left;
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 20px;
 }
 
@@ -42,8 +41,12 @@
 }
 
 .full_container .tools_container .single_tool h3 {
-  width: 100%;
+  max-width: 100%;
   margin-left: 0;
   font-size: 1.1rem;
+}
+
+.full_container .tools_container .single_tool p {
+  width: 400px;
 }
 /*# sourceMappingURL=News.css.map */
