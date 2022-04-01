@@ -2,22 +2,10 @@
 
 .home_container {
   background: $bg;
-  min-height: 140vh;
-  // padding-left: $sidePadding;
-  // padding-right: $sidePadding;
+  position: relative;
   @include getSidePadding;
   padding-top: 100px;
   color: #fff;
-  overflow: hidden;
-
-  // & > * {
-  //   // margin: 0 auto;
-  //   @include bo;
-  //   & > * {
-  //     // margin: 0 auto;
-  //     @include bo;
-  //   }
-  // }
 
   & > :nth-child(5) {
     margin-top: 50px;

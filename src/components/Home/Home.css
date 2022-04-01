@@ -1,9 +1,8 @@
 .home_container {
   background: #27282c;
-  min-height: 140vh;
+  position: relative;
   padding-top: 100px;
   color: #fff;
-  overflow: hidden;
 }
 
 @media screen and (min-width: 3000px) {
@@ -13,7 +12,35 @@
   }
 }
 
-@media screen and (min-width: 2000px) and (max-width: 3000px) {
+@media screen and (min-width: 2400px) and (max-width: 2500px) {
+  .home_container {
+    padding-left: 786px !important;
+    padding-right: 786px !important;
+  }
+}
+
+@media screen and (min-width: 2300px) and (max-width: 2400px) {
+  .home_container {
+    padding-left: 686px !important;
+    padding-right: 686px !important;
+  }
+}
+
+@media screen and (min-width: 2200px) and (max-width: 2300px) {
+  .home_container {
+    padding-left: 586px !important;
+    padding-right: 586px !important;
+  }
+}
+
+@media screen and (min-width: 2100px) and (max-width: 2200px) {
+  .home_container {
+    padding-left: 486px !important;
+    padding-right: 486px !important;
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2100px) {
   .home_container {
     padding-left: 386px !important;
     padding-right: 386px !important;
@@ -29,8 +56,8 @@
 
 @media screen and (max-width: 1899px) {
   .home_container {
-    padding-left: 186px;
-    padding-right: 186px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
 

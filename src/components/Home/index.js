@@ -5,6 +5,7 @@ import { News } from "./News/News";
 import { Testimonials } from "./Testimonials/Testimonials";
 import { Tools } from "./Tools/Tools";
 import { ToolsShowcase } from "./ToolsShowcase/ToolsShowcase";
+import { DiscoverMore } from "./DiscoverMore/DiscoverMore";
 
 const toolsShowcaseObj = {
   description1: (
@@ -78,6 +79,7 @@ export const Home = () => {
       <ToolsShowcase obj={toolsShowcaseObj} />
       <News />
       <Testimonials />
+      <DiscoverMore />
     </section>
   );
 };
