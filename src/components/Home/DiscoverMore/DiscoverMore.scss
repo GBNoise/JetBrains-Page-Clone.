@@ -1,0 +1,26 @@
+@import "../../../utilities";
+
+.full_container {
+  .tools_container {
+    .single_tool {
+      img {
+        object-fit: contain;
+        width: 80px;
+      }
+      h3 {
+        font-size: 1.4rem;
+        width: 350px;
+      }
+      p {
+        width: 350px;
+        font-size: 1rem;
+        font-weight: 300;
+        color: #0e0e0e;
+      }
+      a {
+        font-weight: 300;
+        font-size: 1rem;
+      }
+    }
+  }
+}

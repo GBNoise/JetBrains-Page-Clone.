@@ -1,0 +1,23 @@
+.full_container .tools_container .single_tool img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 80px;
+}
+
+.full_container .tools_container .single_tool h3 {
+  font-size: 1.4rem;
+  width: 350px;
+}
+
+.full_container .tools_container .single_tool p {
+  width: 350px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #0e0e0e;
+}
+
+.full_container .tools_container .single_tool a {
+  font-weight: 300;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=DiscoverMore.css.map */
