@@ -137,12 +137,13 @@ export const Nav = () => {
         <b>JET BRAINS</b>
       </div>
       <ul className="options">
-        {options.map((option) => (
+        {options.map((option, i) => (
           <li
             className={`option${option.split(" ")[0]}`}
             onClick={() => handleOptionInfo(option)}
+            key={i}
           >
-            {option}
+            <p tabIndex={i + 1}>{option}</p>
           </li>
         ))}
       </ul>
