@@ -156,13 +156,13 @@ export const Testimonials = () => {
         <button>More case studies</button>
       </FullContainer>
 
-      <FullContainer color="darkGray">
+      {/* <FullContainer color="darkGray">
         <h1>
           <b>
             Width: {width.width} ||| Height: {width.height}
           </b>
         </h1>
-      </FullContainer>
+      </FullContainer> */}
     </>
   );
 };
