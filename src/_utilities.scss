@@ -3,16 +3,69 @@ $txtColor: rgb(133, 133, 133);
 $sidePadding: 186px;
 $lightBlue: rgb(52, 126, 246);
 
-@media screen and (min-width: 1020px) {
-  $sidePadding: 286px;
-}
+// @mixin getSidePadding {
+//   @media screen and (min-width: 1600px) and (max-width: 1800px) {
+//     padding-left: 186px !important;
+//     padding-right: 186px !important;
+//   }
+
+//   @for $i from 6 through 15 {
+//     $min: 1000 + ($i * 100) +0px;
+//     $max: 1100 + ($i * 100) + 0px;
+//     $padding: 386 + (100 * ($i - 10));
+
+//     @media screen and (min-width: $min) and (max-width: $max) {
+//       padding-left: ($padding) +0px !important;
+//       padding-right: ($padding) +0px !important;
+//     }
+//   }
+
+//   @media screen and (min-width: 3000px) {
+//     padding-left: 986px !important;
+//     padding-right: 986px !important;
+//   }
+// }
+
+// @mixin ignorePadding {
+//   @for $i from 6 through 15 {
+//     $min: 1000 + ($i * 100) +0px;
+//     $max: 1100 + ($i * 100) + 0px;
+//     $padding: 386 + (100 * ($i - 10)) + 0px;
+//     @media screen and (min-width: $min) and (max-width: $max) {
+//       margin-left: ($padding) * -1 + 0px !important;
+//     }
+//   }
+
+//   @media screen and (min-width: 3000px) {
+//     margin-left: -986px !important;
+//   }
+// }
 
 @mixin getSidePadding {
   @media screen and (min-width: 3000px) {
     padding-left: 986px !important;
     padding-right: 986px !important;
   }
-  @media screen and (min-width: 2000px) and (max-width: 3000px) {
+  @media screen and (min-width: 2400px) and (max-width: 2500px) {
+    padding-left: 786px !important;
+    padding-right: 786px !important;
+  }
+  @media screen and (min-width: 2300px) and (max-width: 2400px) {
+    padding-left: 686px !important;
+    padding-right: 686px !important;
+  }
+
+  @media screen and (min-width: 2200px) and (max-width: 2300px) {
+    padding-left: 586px !important;
+    padding-right: 586px !important;
+  }
+
+  @media screen and (min-width: 2100px) and (max-width: 2200px) {
+    padding-left: 486px !important;
+    padding-right: 486px !important;
+  }
+
+  @media screen and (min-width: 2000px) and (max-width: 2100px) {
     padding-left: 386px !important;
     padding-right: 386px !important;
   }
@@ -22,24 +75,36 @@ $lightBlue: rgb(52, 126, 246);
     padding-right: 286px;
   }
   @media screen and(max-width: 1899px) {
-    padding-left: 186px;
-    padding-right: 186px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
-@mixin ignorePadding {
-  @media screen and (min-width: 3000px) {
-    margin-left: -986px !important;
-  }
-  @media screen and (min-width: 2000px) and (max-width: 3000px) {
-    margin-left: -386px !important;
-  }
-  @media screen and (min-width: 1900px) {
-    margin-left: -286px;
-  }
-  @media screen and(max-width: 1899px) {
-    margin-left: -186px;
-  }
-}
+// @mixin ignorePadding {
+//   @media screen and (min-width: 3000px) {
+//     margin-left: -986px !important;
+//   }
+//   @media screen and (min-width: 2400px) and (max-width: 2500px) {
+//     margin-left: -786px !important;
+//   }
+//   @media screen and (min-width: 2300px) and (max-width: 2400px) {
+//     margin-left: -686px !important;
+//   }
+//   @media screen and (min-width: 2200px) and (max-width: 2300px) {
+//     margin-left: -586px !important;
+//   }
+//   @media screen and (min-width: 2100px) and (max-width: 2200px) {
+//     margin-left: -486px !important;
+//   }
+//   @media screen and (min-width: 2000px) and (max-width: 2100px) {
+//     margin-left: -386px !important;
+//   }
+//   @media screen and (min-width: 1900px) {
+//     margin-left: -286px;
+//   }
+//   @media screen and(max-width: 1899px) {
+//     margin-left: -186px;
+//   }
+// }
 
 @mixin flex-center {
   display: flex;
