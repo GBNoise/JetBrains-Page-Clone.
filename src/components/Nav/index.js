@@ -171,6 +171,7 @@ export const Nav = () => {
                 </div>
               );
             })}
+          <div className="options"></div>
         </div>
       </section>
     </nav>
