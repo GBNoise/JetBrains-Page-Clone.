@@ -31,9 +31,11 @@ const arr = [
 
 export const DiscoverMore = () => {
   return (
-    <FullContainer color="darkWhite">
-      <h1>Discover More</h1>
-      <Tools arr={arr} />
-    </FullContainer>
+    <section className="discover_more_container">
+      <FullContainer color="darkWhite">
+        <h1>Discover More</h1>
+        <Tools arr={arr} />
+      </FullContainer>
+    </section>
   );
 };

@@ -131,30 +131,33 @@ export const Testimonials = () => {
             </div>
           </div>
         </div>
-
-        <FullContainer color="white">
-          <h2>
-            Our tools are used all over the world in some of the best-known
-            companies
-          </h2>
-          <ul className="logos_list">
-            {companies.map((c) => (
-              <li>
-                <img src={c} alt="logo" />
-              </li>
-            ))}
-          </ul>
-        </FullContainer>
+        <div className="companies">
+          <FullContainer color="white">
+            <h2>
+              Our tools are used all over the world in some of the best-known
+              companies
+            </h2>
+            <ul className="logos_list">
+              {companies.map((c) => (
+                <li>
+                  <img src={c} alt="logo" />
+                </li>
+              ))}
+            </ul>
+          </FullContainer>
+        </div>
       </section>
 
-      <FullContainer color="white" className="customer_stories">
-        <span>
-          <h1>Customer Stories</h1>
-          <p>See how the world's leading companies use JetBrains Products</p>
-        </span>
-        <Tools arr={customerStories} />
-        <button>More case studies</button>
-      </FullContainer>
+      <div className="customer_stories_container">
+        <FullContainer color="white" className="customer_stories">
+          <span>
+            <h1>Customer Stories</h1>
+            <p>See how the world's leading companies use JetBrains Products</p>
+          </span>
+          <Tools arr={customerStories} />
+          <button>More case studies</button>
+        </FullContainer>
+      </div>
 
       {/* <FullContainer color="darkGray">
         <h1>

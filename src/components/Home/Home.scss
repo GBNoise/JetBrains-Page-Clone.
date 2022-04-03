@@ -3,9 +3,13 @@
 .home_container {
   background: $bg;
   position: relative;
-  @include getSidePadding;
   padding-top: 100px;
   color: #fff;
+  overflow-x: hidden;
+  & > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   & > :nth-child(5) {
     margin-top: 50px;
@@ -13,13 +17,13 @@
 
   h1 {
     text-align: left;
-    max-width: 1000px;
+    max-width: $maxWidth;
     font-size: 2.5rem;
   }
   h3 {
     margin-top: 20px;
     text-align: left;
-    width: 800px;
     font-size: 1.4rem;
+    max-width: $maxWidth;
   }
 }

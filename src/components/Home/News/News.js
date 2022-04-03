@@ -29,9 +29,11 @@ const news = [
 
 export const News = () => {
   return (
-    <FullContainer color={"darkWhite"}>
-      <h1>News & Events</h1>
-      <Tools arr={news} />
-    </FullContainer>
+    <section className="news_container">
+      <FullContainer color={"darkWhite"}>
+        <h1>News & Events</h1>
+        <Tools arr={news} />
+      </FullContainer>
+    </section>
   );
 };

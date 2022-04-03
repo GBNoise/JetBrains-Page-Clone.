@@ -5,12 +5,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   z-index: 1000;
   position: relative;
 }
@@ -71,7 +65,22 @@
   }
 }
 
-.navbar .logo {
+.navbar .nav_items_container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1286px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .nav_items_container .logo {
   width: 75px;
   min-height: 75px;
   background: black;
@@ -85,7 +94,7 @@
   letter-spacing: -2px;
 }
 
-.navbar .options {
+.navbar .nav_items_container .options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,11 +102,11 @@
   padding-right: 10px;
 }
 
-.navbar .options :not(:first-child) {
+.navbar .nav_items_container .options :not(:first-child) {
   margin-left: 20px;
 }
 
-.navbar .options li {
+.navbar .nav_items_container .options li {
   font-size: 1.2rem;
   color: #858585;
   font-weight: 400;
@@ -105,11 +114,11 @@
   position: relative;
 }
 
-.navbar .options li:hover {
+.navbar .nav_items_container .options li:hover {
   color: white;
 }
 
-.navbar .options li::after {
+.navbar .nav_items_container .options li::after {
   content: "";
   position: absolute;
   bottom: -35px;
@@ -122,7 +131,9 @@
   visibility: var(--isvisible, hidden);
 }
 
-.navbar .option_info_container {
+.navbar .nav_items_container .option_info_container {
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
   top: 75px;
   left: 0;
@@ -141,8 +152,8 @@
           align-items: flex-start;
 }
 
-.navbar .option_info_container .option_info {
-  width: 100%;
+.navbar .nav_items_container .option_info_container .option_info {
+  width: 1286px;
   min-height: 500px;
   background: transparent;
   display: -webkit-box;
@@ -154,63 +165,7 @@
   position: relative;
 }
 
-@media screen and (min-width: 3000px) {
-  .navbar .option_info_container .option_info {
-    padding-left: 986px !important;
-    padding-right: 986px !important;
-  }
-}
-
-@media screen and (min-width: 2400px) and (max-width: 2500px) {
-  .navbar .option_info_container .option_info {
-    padding-left: 786px !important;
-    padding-right: 786px !important;
-  }
-}
-
-@media screen and (min-width: 2300px) and (max-width: 2400px) {
-  .navbar .option_info_container .option_info {
-    padding-left: 686px !important;
-    padding-right: 686px !important;
-  }
-}
-
-@media screen and (min-width: 2200px) and (max-width: 2300px) {
-  .navbar .option_info_container .option_info {
-    padding-left: 586px !important;
-    padding-right: 586px !important;
-  }
-}
-
-@media screen and (min-width: 2100px) and (max-width: 2200px) {
-  .navbar .option_info_container .option_info {
-    padding-left: 486px !important;
-    padding-right: 486px !important;
-  }
-}
-
-@media screen and (min-width: 2000px) and (max-width: 2100px) {
-  .navbar .option_info_container .option_info {
-    padding-left: 386px !important;
-    padding-right: 386px !important;
-  }
-}
-
-@media screen and (min-width: 1900px) {
-  .navbar .option_info_container .option_info {
-    padding-left: 286px;
-    padding-right: 286px;
-  }
-}
-
-@media screen and (max-width: 1899px) {
-  .navbar .option_info_container .option_info {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-}
-
-.navbar .option_info_container .option_info .highlights_container {
+.navbar .nav_items_container .option_info_container .option_info .highlights_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,7 +177,7 @@
   width: 300px;
 }
 
-.navbar .option_info_container .option_info .highlights_container .single_highlight {
+.navbar .nav_items_container .option_info_container .option_info .highlights_container .single_highlight {
   min-height: 250px;
   width: 300px;
   background: black;
@@ -241,14 +196,84 @@
           flex: 1;
 }
 
-.navbar .option_info_container .option_info .highlights_container .single_highlight span {
+.navbar .nav_items_container .option_info_container .option_info .highlights_container .single_highlight span {
   color: white;
   text-align: left;
 }
 
-.navbar .option_info_container .option_info .options {
+.navbar .nav_items_container .option_info_container .option_info .options {
   width: calc(100% - 300px);
   min-height: 500px;
   background: white;
+  padding: 25px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .nav_items_container .option_info_container .option_info .options > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.navbar .nav_items_container .option_info_container .option_info .options h4 {
+  position: absolute;
+  top: 25px;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.navbar .nav_items_container .option_info_container .option_info .options > :nth-child(3) {
+  padding-left: 30px;
+  border-left: solid #d2d2d2 1px;
+}
+
+.navbar .nav_items_container .option_info_container .option_info .options > :nth-child(4) {
+  padding-left: 30px;
+  border-left: solid #d2d2d2 1px;
+}
+
+.navbar .nav_items_container .option_info_container .option_info .DeveloperTools .IDEs {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.navbar .nav_items_container .option_info_container .option_info .DeveloperTools > * {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.navbar .nav_items_container .option_info_container .option_info .DeveloperTools a {
+  margin-top: 20px;
+  color: #636363;
+  font-weight: 400;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 0;
+}
+
+.navbar .nav_items_container .option_info_container .option_info .DeveloperTools a:hover {
+  color: #383838;
 }
 /*# sourceMappingURL=Nav.css.map */

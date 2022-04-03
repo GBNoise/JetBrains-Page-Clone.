@@ -1,4 +1,8 @@
-.full_container {
+.news_container {
+  background: #f4f4f4;
+}
+
+.news_container .full_container {
   height: 500px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -9,22 +13,22 @@
           align-items: flex-start !important;
 }
 
-.full_container h1 {
+.news_container .full_container h1 {
   text-align: left;
   max-width: 100%;
   margin-bottom: 20px;
 }
 
-.full_container > * {
+.news_container .full_container > * {
   color: black;
 }
 
-.full_container .tools_container {
+.news_container .full_container .tools_container {
   margin-top: 0;
   height: 250px;
 }
 
-.full_container .tools_container .single_tool {
+.news_container .full_container .tools_container .single_tool {
   width: 35% !important;
   font-size: 0.8rem;
   -webkit-box-pack: start;
@@ -33,20 +37,20 @@
   min-height: 200px;
 }
 
-.full_container .tools_container .single_tool h4 {
+.news_container .full_container .tools_container .single_tool h4 {
   text-align: left;
   color: darkgrey;
   font-weight: 100;
   font-size: 1rem;
 }
 
-.full_container .tools_container .single_tool h3 {
+.news_container .full_container .tools_container .single_tool h3 {
   max-width: 100%;
   margin-left: 0;
   font-size: 1.1rem;
 }
 
-.full_container .tools_container .single_tool p {
+.news_container .full_container .tools_container .single_tool p {
   width: 400px;
 }
 /*# sourceMappingURL=News.css.map */

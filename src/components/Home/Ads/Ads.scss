@@ -6,7 +6,7 @@ $h: 600px;
 $halfh: $h / 2 - 10px;
 
 .ads_container {
-  width: 100%;
+  max-width: $maxWidth;
   height: $h;
   @include flex-center;
   flex-wrap: no-wrap;

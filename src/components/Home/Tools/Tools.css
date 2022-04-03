@@ -1,5 +1,5 @@
 .tools_container {
-  width: 100%;
+  max-width: 1286px;
   min-height: 200px;
   margin-top: 20px;
   display: -webkit-box;

@@ -3,62 +3,12 @@
   position: relative;
   padding-top: 100px;
   color: #fff;
+  overflow-x: hidden;
 }
 
-@media screen and (min-width: 3000px) {
-  .home_container {
-    padding-left: 986px !important;
-    padding-right: 986px !important;
-  }
-}
-
-@media screen and (min-width: 2400px) and (max-width: 2500px) {
-  .home_container {
-    padding-left: 786px !important;
-    padding-right: 786px !important;
-  }
-}
-
-@media screen and (min-width: 2300px) and (max-width: 2400px) {
-  .home_container {
-    padding-left: 686px !important;
-    padding-right: 686px !important;
-  }
-}
-
-@media screen and (min-width: 2200px) and (max-width: 2300px) {
-  .home_container {
-    padding-left: 586px !important;
-    padding-right: 586px !important;
-  }
-}
-
-@media screen and (min-width: 2100px) and (max-width: 2200px) {
-  .home_container {
-    padding-left: 486px !important;
-    padding-right: 486px !important;
-  }
-}
-
-@media screen and (min-width: 2000px) and (max-width: 2100px) {
-  .home_container {
-    padding-left: 386px !important;
-    padding-right: 386px !important;
-  }
-}
-
-@media screen and (min-width: 1900px) {
-  .home_container {
-    padding-left: 286px;
-    padding-right: 286px;
-  }
-}
-
-@media screen and (max-width: 1899px) {
-  .home_container {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
+.home_container > * {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home_container > :nth-child(5) {
@@ -67,14 +17,14 @@
 
 .home_container h1 {
   text-align: left;
-  max-width: 1000px;
+  max-width: 1286px;
   font-size: 2.5rem;
 }
 
 .home_container h3 {
   margin-top: 20px;
   text-align: left;
-  width: 800px;
   font-size: 1.4rem;
+  max-width: 1286px;
 }
 /*# sourceMappingURL=Home.css.map */

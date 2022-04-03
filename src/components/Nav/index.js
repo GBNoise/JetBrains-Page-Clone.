@@ -108,9 +108,55 @@ const optionsInformation = [
   },
 ];
 
+const optionsLinks = {
+  "Developer Tools": {
+    IDEs: [
+      "AppCode",
+      "CLion",
+      "DataGrip",
+      "DataSpell",
+      "Fleet",
+      "GoLand",
+      "IntelliJ IDEA",
+      "PhpStorm",
+      "PyCharm",
+      "Rider",
+      "RubyMine",
+      "WebStorm",
+    ],
+    "PLUGINS & SERVICES": [
+      "All Plugins",
+      "IDE Themes",
+      "Big Data Tools",
+      "Code With Me",
+      "QA Tools",
+      "Rust",
+      "Scala",
+      "Toolbox App",
+      "Rider Flow",
+    ],
+    ".NET % VISUAL STUDIO": [
+      "Rider",
+      "ReSharper",
+      "ReSharper C++",
+      "dotCover",
+      "dotMemory",
+      "dotPeek",
+      "dotTrace",
+      ".NET Tools Plugins",
+    ],
+    "LANGUAGES & FRAMEWORKS": ["Kotlin", "Ktor", "MPS", "Compose for Desktop"],
+  },
+  "Team Tools": {},
+  "Learning Tools": {},
+  Solutions: {},
+  Support: {},
+  Store: {},
+};
+
 export const Nav = () => {
   const optionInfoRef = useRef(null);
-  const [option, setOption] = useState("");
+  const [option, setOption] = useState("Developer Tools");
 
   const handleOptionInfo = (op) => {
     console.log("this is running");
@@ -133,47 +179,62 @@ export const Nav = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">
-        <b>JET BRAINS</b>
-      </div>
-      <ul className="options">
-        {options.map((option, i) => (
-          <li
-            className={`option${option.split(" ")[0]}`}
-            onClick={() => handleOptionInfo(option)}
-            key={i}
-          >
-            <p tabIndex={i + 1}>{option}</p>
-          </li>
-        ))}
-      </ul>
-      <section className="option_info_container" ref={optionInfoRef}>
-        <div className="option_info">
-          {optionsInformation
-            .filter((el) => el.name === option)
-            .map((el) => {
-              const { name, highlights } = el;
-              return (
-                <div className="highlights_container">
-                  {highlights.map((high) => {
-                    return (
-                      <div
-                        className="single_highlight"
-                        style={{ background: `${high.color}` }}
-                      >
-                        <span>
-                          <h2>{high.name}</h2>
-                          <p>{high?.description}</p>
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-              );
-            })}
-          <div className="options"></div>
+      <div className="nav_items_container">
+        <div className="logo">
+          <b>JET BRAINS</b>
         </div>
-      </section>
+        <ul className="options">
+          {options.map((option, i) => (
+            <li
+              className={`option${option.split(" ")[0]}`}
+              onClick={() => handleOptionInfo(option)}
+              key={i}
+            >
+              <p>{option}</p>
+            </li>
+          ))}
+        </ul>
+        <section className="option_info_container" ref={optionInfoRef}>
+          <div className="option_info">
+            {optionsInformation
+              .filter((el) => el.name === option)
+              .map((el) => {
+                const { name, highlights } = el;
+                return (
+                  <div className="highlights_container">
+                    {highlights.map((high) => {
+                      return (
+                        <div
+                          className="single_highlight"
+                          style={{ background: `${high.color}` }}
+                        >
+                          <span>
+                            <h2>{high.name}</h2>
+                            <p>{high?.description}</p>
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            <div className={"options " + option.replace(" ", "")}>
+              {Object.entries(optionsLinks[option]).map(([key, value]) => {
+                return (
+                  <>
+                    <div className={key.replace(" ", "")}>
+                      <h4>{key}</h4>
+                      {value.map((link) => {
+                        return <a href="#">{link}</a>;
+                      })}
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      </div>
     </nav>
   );
 };

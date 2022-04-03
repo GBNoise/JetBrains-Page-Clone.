@@ -1,6 +1,6 @@
 @import "../../../utilities";
 .tools_container {
-  width: 100%;
+  max-width: $maxWidth;
   min-height: 200px;
   margin-top: 20px;
   display: flex;
