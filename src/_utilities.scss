@@ -2,44 +2,8 @@ $bg: rgb(39, 40, 44);
 $txtColor: rgb(133, 133, 133);
 $sidePadding: 186px;
 $lightBlue: rgb(52, 126, 246);
+$maxWidth: 1286px;
 
-// @mixin getSidePadding {
-//   @media screen and (min-width: 1600px) and (max-width: 1800px) {
-//     padding-left: 186px !important;
-//     padding-right: 186px !important;
-//   }
-
-//   @for $i from 6 through 15 {
-//     $min: 1000 + ($i * 100) +0px;
-//     $max: 1100 + ($i * 100) + 0px;
-//     $padding: 386 + (100 * ($i - 10));
-
-//     @media screen and (min-width: $min) and (max-width: $max) {
-//       padding-left: ($padding) +0px !important;
-//       padding-right: ($padding) +0px !important;
-//     }
-//   }
-
-//   @media screen and (min-width: 3000px) {
-//     padding-left: 986px !important;
-//     padding-right: 986px !important;
-//   }
-// }
-
-// @mixin ignorePadding {
-//   @for $i from 6 through 15 {
-//     $min: 1000 + ($i * 100) +0px;
-//     $max: 1100 + ($i * 100) + 0px;
-//     $padding: 386 + (100 * ($i - 10)) + 0px;
-//     @media screen and (min-width: $min) and (max-width: $max) {
-//       margin-left: ($padding) * -1 + 0px !important;
-//     }
-//   }
-
-//   @media screen and (min-width: 3000px) {
-//     margin-left: -986px !important;
-//   }
-// }
 
 @mixin getSidePadding {
   @media screen and (min-width: 3000px) {
